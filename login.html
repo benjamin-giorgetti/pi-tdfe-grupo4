@@ -7,8 +7,83 @@
 </head>
 <body>
     <header>
-            <div class="logo"></div>
-                <a href="./index.html">Kitchening</a>
+        <h1>Login</h1>
+            <div>
+            <form action="./login.html" method="GET"></form>
+                
+            <div>
+                <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username" required>
+            </div>
+
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="nacionalidad">Nacionalidad:</label>
+                <select name="nacionalidad" id="nacionalidad" required>
+                    <option value="">Seleccione una nacionalidad</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Chile">Chile</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="genero">Género:</label>
+                <input type="radio" name="genero" value="" id="genero-masculino" required>
+                <label for="genero-masculino">Masculino</label>
+                <input type="radio" name="genero" value="" id="genero-femenino" required>
+                <label for="genero-femenino">Femenino</label>
+                <input type="radio" name="genero" value="" id="genero-otro" required>
+                <label for="genero-otro">Otro</label>
+                </select>
+            </div>
+
+            <div>
+                <input type="checkbox" name="hobbies" id="hobby-leer" value="leer">
+                <label for="hobby-leer">Leer</label>
+
+                <input type="checkbox" name="hobbies" id="hobby-deporte" value="deporte">
+                <label for="hobby-deporte">Deporte</label>
+
+                <input type="checkbox" name="hobbies" id="hobby-musica" value="musica">
+                <label for="hobby-musica">Música</label>
+
+                <input type="checkbox" name="hobbies" id="hobby-viajar" value="viajar">
+                <label for="hobby-viajar">Viajar</label>
+
+                <input type="checkbox" name="hobbies" id="hobby-otro" value="otro">
+                <label for="hobby-otro">Otro</label>
+
+                <textarea name="otro" id=""></textarea>
+            </div>
+                
+            <div>
+                <label for="contanos-sobre-vos">Contanos sobre vos:</label>
+                <textarea name="contanos-sobre-vos" id="contanos-sobre-vos"></textarea>
+            </div>
+
+            <div>
+                <input type="checkbox" name="terminos" id="terminos" required>
+                <label for="terminos">Acepto los términos y condiciones</label>
+            </div>
+
+            <div>
+                
+            </div>
+                <button type="submit">Login</button> 
+
+            </form>
+        </div>
+
     </header>
 </body>
 </html>
