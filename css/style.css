@@ -318,6 +318,9 @@ textarea {
 
 .div-login {
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .login-h1 {
@@ -330,6 +333,9 @@ textarea {
 
 .div-register {
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .register-h1 {
@@ -357,4 +363,35 @@ textarea {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: red 0px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-terminos {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.div-hobbies {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.div-genero {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+label {
+    font-size: 14px;
+    margin: 3px;
 }
