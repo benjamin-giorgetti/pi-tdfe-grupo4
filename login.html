@@ -1,35 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Login</title>
 </head>
+
 <body>
     <header>
         <h1>Login</h1>
+        <form action="./index.html" method="GET">
             <div>
-                <form action="./searchResults.html" method="GET">
-
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                <div>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password">
-                </div>
-
-
-                <div>
-                    <label for="recordarme">Recordarme:</label>
-                    <input type="checkbox" id="recordarme" name="recordarme">
-                    </div>
-
-                <div>
-                    <input type="submit" value="Login">
-                </div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
             </div>
 
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <div>
+                <input type="checkbox" id="recordarme" name="recordarme">
+                <label for="recordarme">Recordarme</label>
+            </div>
+            <div>
+                <input type="submit" value="Login">
+            </div>
         </form>
+        
+    </header>
+
+</body>
+
+</html>
