@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.header-buscador form {
+    display: flex;
+}
+
+.header-buscador input[type="text"] {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    width: 300px;
+    font-family: Arial, sans-serif;
+}
+
+.header-buscador button {
+    padding: 8px 16px;
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.header-usuario {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.header-usuario a {
+    color: #222;
+    padding: 6px 12px;
+    border: 1px solid #222;
+}
+
+.nav-horizontal {
+    background-color: #222;
+}
+
+.nav-lista {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.nav-item {
+    padding: 12px 20px;
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 14px;
+}
+
+.contenedor-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 220px;
+    padding-right: 20px;
+}
+
+.sidebar-titulo {
+    font-size: 16px;
+    color: #222;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #222;
+}
+
+.sidebar-lista {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar-link {
+    display: flex;
+    padding: 10px 0;
+    font-size: 13px;
+    color: #444;
+}
+
+main {
+    width: 100%;
+}
+
+.seccion-titulo {
+    font-size: 20px;
+    color: #222;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #222;
+}
+
+.productos-grilla {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.producto-card {
+    width: 18%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.producto-card img {
+    width: 100%;
+}
+
+.producto-info {
+    padding: 10px;
+}
+
+.producto-precio {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+}
+
+.precio-anterior {
+    font-size: 12px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.producto-nombre {
+    font-size: 13px;
+    color: #222;
+    margin-top: 5px;
+}
+
+.producto-descripcion {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.btn-detalle {
+    margin-top: 10px;
+}
+
+.btn-detalle a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    color: #fff;
+    padding: 8px;
+    font-size: 13px;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+    .header-contenido {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .header-buscador {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .header-buscador input[type="text"] {
+        width: 100%;
+    }
+
+    .header-buscador form {
+        width: 100%;
+    }
+
+    .header-usuario {
+        margin-top: 10px;
+    }
+
+    .contenedor-principal {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .sidebar-lista {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sidebar-item {
+        border-bottom: none;
+        padding: 5px 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        margin: 3px;
+    }
+
+    .producto-card {
+        width: 48%;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .nav-lista {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        border-bottom: 1px solid #444;
+        text-align: center;
+    }
+
+    .sidebar-lista {
+        flex-direction: column;
+    }
+
+    .sidebar-item {
+        margin: 0;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        padding: 0;
+    }
+
+    .producto-card {
+        width: 100%;
+    }
+}
