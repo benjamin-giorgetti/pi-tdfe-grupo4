@@ -10,77 +10,64 @@ ul, ol {
 
 a {
     text-decoration: none;
-    color: #222;
+    color: #000;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #e8e8e8;
 }
 
 header {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.header-contenido {
-    max-width: 1200px;
-    margin: 0 auto;
+.login {
+    width: 100%;
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #444;
+}
+
+.login a {
+    color: #444;
+}
+
+.logo-contenedor {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 20px;
+    justify-content: center;
 }
 
 .logo {
-    height: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 
-.header-buscador form {
+nav {
+    width: 100%;
     display: flex;
-}
-
-.header-buscador input[type="text"] {
-    padding: 8px 12px;
-    font-size: 14px;
-    border: 1px solid #ddd;
-    width: 300px;
-    font-family: Arial, sans-serif;
-}
-
-.header-buscador button {
-    padding: 8px 16px;
-    background-color: #222;
-    color: #fff;
-    font-size: 14px;
-    border: none;
-    cursor: pointer;
-}
-
-.header-usuario {
-    display: flex;
-    gap: 15px;
-    font-size: 14px;
-}
-
-.header-usuario a {
-    color: #222;
-    padding: 6px 12px;
-    border: 1px solid #222;
-}
-
-.nav-horizontal {
-    background-color: #222;
+    justify-content: center;
 }
 
 .nav-lista {
     max-width: 1200px;
-    margin: 0 auto;
+    width: 95%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .nav-item {
-    padding: 12px 20px;
+    width: 32%;
+    height: 50px;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-link {
@@ -88,24 +75,22 @@ header {
     font-size: 14px;
 }
 
-.contenedor-principal {
+.contenido {
     max-width: 1200px;
-    margin: 0 auto;
+    width: 95%;
+    margin: 20px auto;
     display: flex;
-    padding: 20px;
 }
 
 .sidebar {
-    width: 220px;
-    padding-right: 20px;
+    width: 200px;
+    margin-right: 20px;
 }
 
 .sidebar-titulo {
     font-size: 16px;
     color: #222;
-    padding-bottom: 10px;
     margin-bottom: 10px;
-    border-bottom: 2px solid #222;
 }
 
 .sidebar-lista {
@@ -114,128 +99,109 @@ header {
 }
 
 .sidebar-item {
-    border-bottom: 1px solid #ddd;
+    background-color: #222;
+    margin-bottom: 3px;
 }
 
 .sidebar-link {
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 15px;
     display: flex;
-    padding: 10px 0;
-    font-size: 13px;
-    color: #444;
 }
 
 main {
     width: 100%;
 }
 
-.seccion-titulo {
-    font-size: 20px;
-    color: #222;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #222;
+.seccion {
+    margin-bottom: 30px;
 }
 
-.productos-grilla {
+.seccion h2 {
+    font-size: 18px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.productos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 40px;
 }
 
-.producto-card {
-    width: 18%;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin-bottom: 15px;
+.producto {
+    width: 31%;
+    margin-bottom: 20px;
 }
 
-.producto-card img {
+.producto img {
     width: 100%;
 }
 
-.producto-info {
-    padding: 10px;
+.producto h3 {
+    font-size: 14px;
+    color: #222;
+    margin-top: 8px;
 }
 
-.producto-precio {
+.precio {
     font-size: 16px;
     font-weight: bold;
-    color: #222;
-}
-
-.precio-anterior {
-    font-size: 12px;
-    color: #999;
-    text-decoration: line-through;
-}
-
-.producto-nombre {
-    font-size: 13px;
     color: #222;
     margin-top: 5px;
 }
 
-.producto-descripcion {
-    font-size: 12px;
+.producto p {
+    font-size: 13px;
     color: #666;
     margin-top: 5px;
 }
 
-.btn-detalle {
+.btn-ver-mas {
+    background-color: #222;
+    width: 100px;
+    padding: 8px 20px;
     margin-top: 10px;
+    text-align: center;
 }
 
-.btn-detalle a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #222;
+.btn-ver-mas a {
     color: #fff;
-    padding: 8px;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 footer {
+    max-width: 1200px;
+    width: 95%;
+    margin: 30px auto;
     background-color: #222;
-    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 20px;
+}
+
+footer p {
+    color: #fff;
     font-size: 14px;
 }
 
 @media (max-width: 768px) {
 
-    .header-contenido {
+    .nav-item {
+        height: 40px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .contenido {
         flex-direction: column;
-        padding: 10px;
-    }
-
-    .header-buscador {
-        margin-top: 10px;
-        width: 100%;
-    }
-
-    .header-buscador input[type="text"] {
-        width: 100%;
-    }
-
-    .header-buscador form {
-        width: 100%;
-    }
-
-    .header-usuario {
-        margin-top: 10px;
-    }
-
-    .contenedor-principal {
-        flex-direction: column;
-        padding: 10px;
     }
 
     .sidebar {
         width: 100%;
-        padding-right: 0;
+        margin-right: 0;
         margin-bottom: 20px;
     }
 
@@ -245,27 +211,34 @@ footer {
     }
 
     .sidebar-item {
-        border-bottom: none;
-        padding: 5px 10px;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        margin: 3px;
+        margin-right: 3px;
     }
 
-    .producto-card {
+    .producto {
         width: 48%;
+    }
+
+    footer {
+        width: 95%;
     }
 }
 
 @media (max-width: 420px) {
 
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
     .nav-lista {
         flex-direction: column;
+        align-items: stretch;
     }
 
     .nav-item {
-        border-bottom: 1px solid #444;
-        text-align: center;
+        width: 100%;
+        border: 1px solid #444;
+        margin-bottom: 3px;
     }
 
     .sidebar-lista {
@@ -273,13 +246,14 @@ footer {
     }
 
     .sidebar-item {
-        margin: 0;
-        border: none;
-        border-bottom: 1px solid #ddd;
-        padding: 0;
+        margin-right: 0;
     }
 
-    .producto-card {
+    .producto {
         width: 100%;
+    }
+
+    footer {
+        width: 90%;
     }
 }

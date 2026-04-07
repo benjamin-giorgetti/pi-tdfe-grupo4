@@ -9,254 +9,182 @@
 <body>
 
     <header>
-        <div class="header-contenido">
-            <div class="header-logo">
-                <a href="./index.html">
-                    <img src="./img/logo.png" alt="Relojeame logo" class="logo">
-                </a>
-            </div>
-            <div class="header-buscador">
-                <form action="./search-results.html" method="GET">
-                    <input type="text" name="q" placeholder="Buscar productos...">
-                    <button type="submit">Buscar</button>
-                </form>
-            </div>
-            <div class="header-usuario">
-                <a href="./login.html">Login</a>
-                <a href="./register.html">Registrate</a>
-            </div>
+        <div class="login">
+            <a href="./login.html">Login</a> | <a href="./register.html">Register</a>
         </div>
-        <nav class="nav-horizontal">
+        <div class="logo-contenedor">
+            <img src="./img/logo.png" alt="Relojeame logo" class="logo">
+        </div>
+        <nav>
             <ul class="nav-lista">
-                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="./login.html">Login</a></li>
-                <li class="nav-item"><a class="nav-link" href="./register.html">Registro</a></li>
+                <li class="nav-item"><a class="nav-link" href="./index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="./login.html">LOGIN</a></li>
+                <li class="nav-item"><a class="nav-link" href="./register.html">REGISTRO</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="contenedor-principal">
+    <div class="contenido">
         <aside class="sidebar">
             <h3 class="sidebar-titulo">Categorías</h3>
-            <nav>
-                <ul class="sidebar-lista">
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Beauty</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Fragrances</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Furniture</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Groceries</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Home Decoration</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Kitchen Accessories</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Laptops</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Mens Shirts</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Mens Shoes</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Mens Watches</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Mobile Accessories</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Motorcycle</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Skin Care</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Smartphones</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Sports Accessories</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Sunglasses</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Tablets</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Tops</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Vehicle</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Womens Bags</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Womens Dresses</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Womens Jewellery</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Womens Shoes</a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Womens Watches</a></li>
-                </ul>
-            </nav>
+            <ul class="sidebar-lista">
+                <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Casual</a></li>
+                <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Formal</a></li>
+                <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Sport</a></li>
+                <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Luxury</a></li>
+                <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Aventura</a></li>
+            </ul>
         </aside>
 
         <main>
-            <section class="seccion-productos">
-                <h2 class="seccion-titulo">Productos Destacados</h2>
-                <div class="productos-grilla">
-                    <article class="producto-card">
-                        <img src="./img/producto-1.jpg" alt="Reloj 1">
-                        <div class="producto-info">
-                            <p class="producto-precio">$549.99 <span class="precio-anterior">$1200</span></p>
-                            <h3 class="producto-nombre">Reloj Clásico Negro</h3>
-                            <p class="producto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua m tincidunt mauris eu.</p>
-                            <div class="btn-detalle"><a href="./product.html">Ver detalle</a></div>
-                        </div>
+            <section class="seccion">
+                <h2>Productos Destacados</h2>
+                <div class="productos">
+                    <article class="producto">
+                        <img src="./img/producto-1.jpg" alt="Reloj Clásico Negro">
+                        <h3>Reloj Clásico Negro</h3>
+                        <p class="precio">$549.99</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="btn-ver-mas"><a href="./product.html">Ver detalle</a></div>
                     </article>
-                    <article class="producto-card">
-                        <img src="./img/producto-2.jpg" alt="Reloj 2">
-                        <div class="producto-info">
-                            <p class="producto-precio">$349.99 <span class="precio-anterior">$700</span></p>
-                            <h3 class="producto-nombre">Reloj Deportivo Azul</h3>
-                            <p class="producto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua m tincidunt mauris eu.</p>
-                            <div class="btn-detalle"><a href="./product.html">Ver detalle</a></div>
-                        </div>
+                    <article class="producto">
+                        <img src="./img/producto-2.jpg" alt="Reloj Deportivo Azul">
+                        <h3>Reloj Deportivo Azul</h3>
+                        <p class="precio">$349.99</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="btn-ver-mas"><a href="./product.html">Ver detalle</a></div>
                     </article>
-                    <article class="producto-card">
-                        <img src="./img/producto-3.jpg" alt="Reloj 3">
-                        <div class="producto-info">
-                            <p class="producto-precio">$899.99 <span class="precio-anterior">$1500</span></p>
-                            <h3 class="producto-nombre">Reloj Elegante Dorado</h3>
-                            <p class="producto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua m tincidunt mauris eu.</p>
-                            <div class="btn-detalle"><a href="./product.html">Ver detalle</a></div>
-                        </div>
+                    <article class="producto">
+                        <img src="./img/producto-3.jpg" alt="Reloj Elegante Dorado">
+                        <h3>Reloj Elegante Dorado</h3>
+                        <p class="precio">$899.99</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="btn-ver-mas"><a href="./product.html">Ver detalle</a></div>
                     </article>
-                    <article class="producto-card">
-                        <img src="./img/producto-4.jpg" alt="Reloj 4">
-                        <div class="producto-info">
-                            <p class="producto-precio">$279.99 <span class="precio-anterior">$500</span></p>
-                            <h3 class="producto-nombre">Reloj Digital Sport</h3>
-                            <p class="producto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua m tincidunt mauris eu.</p>
-                            <div class="btn-detalle"><a href="./product.html">Ver detalle</a></div>
-                        </div>
+                    <article class="producto">
+                        <img src="./img/producto-4.jpg" alt="Reloj Digital Sport">
+                        <h3>Reloj Digital Sport</h3>
+                        <p class="precio">$279.99</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="btn-ver-mas"><a href="./product.html">Ver detalle</a></div>
                     </article>
-                    <article class="producto-card">
-                        <img src="./img/producto-5.jpg" alt="Reloj 5">
-                        <div class="producto-info">
-                            <p class="producto-precio">$649.99 <span class="precio-anterior">$1100</span></p>
-                            <h3 class="producto-nombre">Reloj Automático Silver</h3>
-                            <p class="producto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua m tincidunt mauris eu.</p>
-                            <div class="btn-detalle"><a href="./product.html">Ver detalle</a></div>
-                        </div>
+                    <article class="producto">
+                        <img src="./img/producto-5.jpg" alt="Reloj Automático Silver">
+                        <h3>Reloj Automático Silver</h3>
+                        <p class="precio">$649.99</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="btn-ver-mas"><a href="./product.html">Ver detalle</a></div>
                     </article>
-                    <article class="producto-card">
-                        <img src="./img/producto-6.jpg" alt="Reloj 6">
-                        <div class="producto-info">
-                            <p class="producto-precio">$199.99 <span class="precio-anterior">$400</span></p>
-                            <h3 class="producto-nombre">Reloj Casual Marrón</h3>
-                            <p class="producto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua m tincidunt mauris eu.</p>
-                            <div class="btn-detalle"><a href="./product.html">Ver detalle</a></div>
-                        </div>
+                    <article class="producto">
+                        <img src="./img/producto-6.jpg" alt="Reloj Casual Marrón">
+                        <h3>Reloj Casual Marrón</h3>
+                        <p class="precio">$199.99</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="btn-ver-mas"><a href="./product.html">Ver detalle</a></div>
                     </article>
-                    <article class="producto-card">
-                        <img src="./img/producto-7.jpg" alt="Reloj 7">
-                        <div class="producto-info">
-                            <p class="producto-precio">$459.99 <span class="precio-anterior">$800</span></p>
-                            <h3 class="producto-nombre">Reloj Cronógrafo Pro</h3>
-                            <p class="producto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua m tincidunt mauris eu.</p>
-                            <div class="btn-detalle"><a href="./product.html">Ver detalle</a></div>
-                        </div>
+                    <article class="producto">
+                        <img src="./img/producto-7.jpg" alt="Reloj Cronógrafo Pro">
+                        <h3>Reloj Cronógrafo Pro</h3>
+                        <p class="precio">$459.99</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="btn-ver-mas"><a href="./product.html">Ver detalle</a></div>
                     </article>
-                    <article class="producto-card">
-                        <img src="./img/producto-8.jpg" alt="Reloj 8">
-                        <div class="producto-info">
-                            <p class="producto-precio">$749.99 <span class="precio-anterior">$1300</span></p>
-                            <h3 class="producto-nombre">Reloj Piloto Vintage</h3>
-                            <p class="producto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua m tincidunt mauris eu.</p>
-                            <div class="btn-detalle"><a href="./product.html">Ver detalle</a></div>
-                        </div>
+                    <article class="producto">
+                        <img src="./img/producto-8.jpg" alt="Reloj Piloto Vintage">
+                        <h3>Reloj Piloto Vintage</h3>
+                        <p class="precio">$749.99</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="btn-ver-mas"><a href="./product.html">Ver detalle</a></div>
                     </article>
-                    <article class="producto-card">
-                        <img src="./img/producto-9.jpg" alt="Reloj 9">
-                        <div class="producto-info">
-                            <p class="producto-precio">$319.99 <span class="precio-anterior">$600</span></p>
-                            <h3 class="producto-nombre">Reloj Minimalista</h3>
-                            <p class="producto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua m tincidunt mauris eu.</p>
-                            <div class="btn-detalle"><a href="./product.html">Ver detalle</a></div>
-                        </div>
+                    <article class="producto">
+                        <img src="./img/producto-9.jpg" alt="Reloj Minimalista">
+                        <h3>Reloj Minimalista</h3>
+                        <p class="precio">$319.99</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="btn-ver-mas"><a href="./product.html">Ver detalle</a></div>
                     </article>
-                    <article class="producto-card">
-                        <img src="./img/producto-10.jpg" alt="Reloj 10">
-                        <div class="producto-info">
-                            <p class="producto-precio">$999.99 <span class="precio-anterior">$1800</span></p>
-                            <h3 class="producto-nombre">Reloj Luxury Edition</h3>
-                            <p class="producto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua m tincidunt mauris eu.</p>
-                            <div class="btn-detalle"><a href="./product.html">Ver detalle</a></div>
-                        </div>
+                    <article class="producto">
+                        <img src="./img/producto-10.jpg" alt="Reloj Luxury Edition">
+                        <h3>Reloj Luxury Edition</h3>
+                        <p class="precio">$999.99</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="btn-ver-mas"><a href="./product.html">Ver detalle</a></div>
                     </article>
                 </div>
             </section>
 
-            <section class="seccion-productos">
-                <h2 class="seccion-titulo">Más Vendidos</h2>
-                <div class="productos-grilla">
-                    <article class="producto-card">
-                        <img src="./img/producto-11.jpg" alt="Reloj 11">
-                        <div class="producto-info">
-                            <p class="producto-precio">$429.99 <span class="precio-anterior">$850</span></p>
-                            <h3 class="producto-nombre">Reloj Titanium Black</h3>
-                            <p class="producto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua m tincidunt mauris eu.</p>
-                            <div class="btn-detalle"><a href="./product.html">Ver detalle</a></div>
-                        </div>
+            <section class="seccion">
+                <h2>Más Vendidos</h2>
+                <div class="productos">
+                    <article class="producto">
+                        <img src="./img/producto-11.jpg" alt="Reloj Titanium Black">
+                        <h3>Reloj Titanium Black</h3>
+                        <p class="precio">$429.99</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="btn-ver-mas"><a href="./product.html">Ver detalle</a></div>
                     </article>
-                    <article class="producto-card">
-                        <img src="./img/producto-12.jpg" alt="Reloj 12">
-                        <div class="producto-info">
-                            <p class="producto-precio">$589.99 <span class="precio-anterior">$1000</span></p>
-                            <h3 class="producto-nombre">Reloj Náutico Pro</h3>
-                            <p class="producto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua m tincidunt mauris eu.</p>
-                            <div class="btn-detalle"><a href="./product.html">Ver detalle</a></div>
-                        </div>
+                    <article class="producto">
+                        <img src="./img/producto-12.jpg" alt="Reloj Náutico Pro">
+                        <h3>Reloj Náutico Pro</h3>
+                        <p class="precio">$589.99</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="btn-ver-mas"><a href="./product.html">Ver detalle</a></div>
                     </article>
-                    <article class="producto-card">
-                        <img src="./img/producto-13.jpg" alt="Reloj 13">
-                        <div class="producto-info">
-                            <p class="producto-precio">$269.99 <span class="precio-anterior">$500</span></p>
-                            <h3 class="producto-nombre">Reloj Urban Style</h3>
-                            <p class="producto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua m tincidunt mauris eu.</p>
-                            <div class="btn-detalle"><a href="./product.html">Ver detalle</a></div>
-                        </div>
+                    <article class="producto">
+                        <img src="./img/producto-13.jpg" alt="Reloj Urban Style">
+                        <h3>Reloj Urban Style</h3>
+                        <p class="precio">$269.99</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="btn-ver-mas"><a href="./product.html">Ver detalle</a></div>
                     </article>
-                    <article class="producto-card">
-                        <img src="./img/producto-14.jpg" alt="Reloj 14">
-                        <div class="producto-info">
-                            <p class="producto-precio">$679.99 <span class="precio-anterior">$1200</span></p>
-                            <h3 class="producto-nombre">Reloj Ceramic White</h3>
-                            <p class="producto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua m tincidunt mauris eu.</p>
-                            <div class="btn-detalle"><a href="./product.html">Ver detalle</a></div>
-                        </div>
+                    <article class="producto">
+                        <img src="./img/producto-14.jpg" alt="Reloj Ceramic White">
+                        <h3>Reloj Ceramic White</h3>
+                        <p class="precio">$679.99</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="btn-ver-mas"><a href="./product.html">Ver detalle</a></div>
                     </article>
-                    <article class="producto-card">
-                        <img src="./img/producto-15.jpg" alt="Reloj 15">
-                        <div class="producto-info">
-                            <p class="producto-precio">$159.99 <span class="precio-anterior">$300</span></p>
-                            <h3 class="producto-nombre">Reloj Fitness Band</h3>
-                            <p class="producto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua m tincidunt mauris eu.</p>
-                            <div class="btn-detalle"><a href="./product.html">Ver detalle</a></div>
-                        </div>
+                    <article class="producto">
+                        <img src="./img/producto-15.jpg" alt="Reloj Fitness Band">
+                        <h3>Reloj Fitness Band</h3>
+                        <p class="precio">$159.99</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="btn-ver-mas"><a href="./product.html">Ver detalle</a></div>
                     </article>
-                    <article class="producto-card">
-                        <img src="./img/producto-16.jpg" alt="Reloj 16">
-                        <div class="producto-info">
-                            <p class="producto-precio">$819.99 <span class="precio-anterior">$1400</span></p>
-                            <h3 class="producto-nombre">Reloj Skeleton Mecánico</h3>
-                            <p class="producto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua m tincidunt mauris eu.</p>
-                            <div class="btn-detalle"><a href="./product.html">Ver detalle</a></div>
-                        </div>
+                    <article class="producto">
+                        <img src="./img/producto-16.jpg" alt="Reloj Skeleton Mecánico">
+                        <h3>Reloj Skeleton Mecánico</h3>
+                        <p class="precio">$819.99</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="btn-ver-mas"><a href="./product.html">Ver detalle</a></div>
                     </article>
-                    <article class="producto-card">
-                        <img src="./img/producto-17.jpg" alt="Reloj 17">
-                        <div class="producto-info">
-                            <p class="producto-precio">$379.99 <span class="precio-anterior">$700</span></p>
-                            <h3 class="producto-nombre">Reloj Aviator GMT</h3>
-                            <p class="producto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua m tincidunt mauris eu.</p>
-                            <div class="btn-detalle"><a href="./product.html">Ver detalle</a></div>
-                        </div>
+                    <article class="producto">
+                        <img src="./img/producto-17.jpg" alt="Reloj Aviator GMT">
+                        <h3>Reloj Aviator GMT</h3>
+                        <p class="precio">$379.99</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="btn-ver-mas"><a href="./product.html">Ver detalle</a></div>
                     </article>
-                    <article class="producto-card">
-                        <img src="./img/producto-18.jpg" alt="Reloj 18">
-                        <div class="producto-info">
-                            <p class="producto-precio">$529.99 <span class="precio-anterior">$950</span></p>
-                            <h3 class="producto-nombre">Reloj Diver 200m</h3>
-                            <p class="producto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua m tincidunt mauris eu.</p>
-                            <div class="btn-detalle"><a href="./product.html">Ver detalle</a></div>
-                        </div>
+                    <article class="producto">
+                        <img src="./img/producto-18.jpg" alt="Reloj Diver 200m">
+                        <h3>Reloj Diver 200m</h3>
+                        <p class="precio">$529.99</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="btn-ver-mas"><a href="./product.html">Ver detalle</a></div>
                     </article>
-                    <article class="producto-card">
-                        <img src="./img/producto-19.jpg" alt="Reloj 19">
-                        <div class="producto-info">
-                            <p class="producto-precio">$449.99 <span class="precio-anterior">$800</span></p>
-                            <h3 class="producto-nombre">Reloj Smart Hybrid</h3>
-                            <p class="producto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua m tincidunt mauris eu.</p>
-                            <div class="btn-detalle"><a href="./product.html">Ver detalle</a></div>
-                        </div>
+                    <article class="producto">
+                        <img src="./img/producto-19.jpg" alt="Reloj Smart Hybrid">
+                        <h3>Reloj Smart Hybrid</h3>
+                        <p class="precio">$449.99</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="btn-ver-mas"><a href="./product.html">Ver detalle</a></div>
                     </article>
-                    <article class="producto-card">
-                        <img src="./img/producto-20.jpg" alt="Reloj 20">
-                        <div class="producto-info">
-                            <p class="producto-precio">$1299.99 <span class="precio-anterior">$2000</span></p>
-                            <h3 class="producto-nombre">Reloj Grand Tourbillon</h3>
-                            <p class="producto-descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliqua m tincidunt mauris eu.</p>
-                            <div class="btn-detalle"><a href="./product.html">Ver detalle</a></div>
-                        </div>
+                    <article class="producto">
+                        <img src="./img/producto-20.jpg" alt="Reloj Grand Tourbillon">
+                        <h3>Reloj Grand Tourbillon</h3>
+                        <p class="precio">$1299.99</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="btn-ver-mas"><a href="./product.html">Ver detalle</a></div>
                     </article>
                 </div>
             </section>
@@ -264,7 +192,7 @@
     </div>
 
     <footer>
-        <p>Franco Mariani, Benjamin Giorgetti y Jose Gimenez Kesseru</p>
+        <p>Franco Mariani | Benjamin Giorgetti | Jose Gimenez Kesseru</p>
     </footer>
 
 </body>
