@@ -6,26 +6,26 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Registro</title>
 </head>
-<body>
+<body class="register-body">
     <header>
-        <h1>Registrate</h1>
-        <form action="./index.html" method="GET">
-            <div>
+        <h1 class="register-h1">Registrate</h1>
+        <form action="./searchResults.html" method="GET">
+            <div class="div-register">
                 <label for="username">Usuario:</label>
                 <input type="text" id="username" name="username" required>
             </div>
 
-            <div>
+            <div class="div-register">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
             </div>
 
-            <div>
+            <div class="div-register">
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password">
             </div>
 
-            <div>
+            <div class="div-register">
                 <label for="nacionalidad">Nacionalidad:</label>
                 <select name="nacionalidad" id="nacionalidad">
                     <option value="">Seleccione una nacionalidad</option>
@@ -37,7 +37,7 @@
                 </select>
             </div>
 
-            <div>
+            <div class="div-register">
                 <p>Género:</p>
                 <input type="radio" name="genero" value="masculino" id="genero-masculino">
                 <label for="genero-masculino">Masculino</label>
@@ -46,8 +46,8 @@
                 <input type="radio" name="genero" value="otro" id="genero-otro">
                 <label for="genero-otro">Otro</label>
             </div>
-            
-            <div>
+
+            <div class="div-register">
                 <p>Hobbies:</p>
                 <input type="checkbox" name="hobbies" id="hobby-leer" value="leer">
                 <label for="hobby-leer">Leer</label>
@@ -60,19 +60,20 @@
                 <input type="checkbox" name="hobbies" id="hobby-cocina" value="cocina">
                 <label for="hobby-cocina">Cocina</label>
             </div>
-            <div>
+            <div class="div-register">
                 <label for="contanos-sobre-vos">Contanos sobre vos:</label>
                 <textarea name="contanos-sobre-vos" id="contanos-sobre-vos" rows="5"></textarea>
             </div>
-            <div>
+            <div class="div-register">
                 <input type="checkbox" name="terminos" id="terminos" required>
                 <label for="terminos">Acepto los términos y condiciones</label>
             </div>
-            <div>
+            <div class="div-register">
                 <button type="submit">Enviar</button>
                 <button type="reset">Resetear</button>
             </div>
         </form>
     </header>
+
 </body>
 </html>
