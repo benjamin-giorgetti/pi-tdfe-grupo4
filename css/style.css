@@ -395,3 +395,27 @@ label {
     font-size: 14px;
     margin: 3px;
 }
+
+.div-recordarme {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.div-hacia-register {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.link-register {
+    text-decoration: underline;
+}
+
+.footer-login {
+    margin-top: 20px;
+    text-align: center;
+    background-color: transparent;
+}
