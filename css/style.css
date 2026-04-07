@@ -371,8 +371,8 @@ textarea {
 .div-terminos {
     margin-top: 15px;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: left;
+    justify-content: center;
 }
 
 .div-hobbies {
