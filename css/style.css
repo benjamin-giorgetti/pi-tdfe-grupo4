@@ -18,6 +18,7 @@ body {
     background-color: #e8e8e8;
     background-image: url(../img/bg-body.png);
     background-repeat: repeat;
+    margin: 20px;
 }
 
 header {
@@ -297,3 +298,4 @@ footer nav {
         color: #fff;
     }
 }
+
