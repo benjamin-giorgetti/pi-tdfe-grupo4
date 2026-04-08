@@ -241,7 +241,23 @@ footer p {
     .producto {
         width: 48%;
     }
+
+    .producto-detalle {
+    flex-direction: column;
+    }
+
+    .producto-detalle-img {
+    width: 100%;
+    }
+
+    .producto-detalle-info {
+    width: 100%;
+    padding: 15px 0;
+    }
+
 }
+
+
 
 @media (max-width: 420px) {
 
@@ -383,4 +399,102 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: none;
+}
+
+.producto-detalle {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.producto-detalle-img {
+    width: 45%;
+}
+
+.producto-detalle-info {
+    width: 55%;
+    padding: 0 25px;
+}
+
+.producto-detalle-nombre {
+    font-size: 28px;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+}
+
+.producto-marca {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.producto-categoria {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.producto-stock {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.producto-descripcion {
+    font-size: 14px;
+    color: #333;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.producto-tags {
+    display: flex;
+}
+
+.producto-tag {
+    background-color: #c9a84c;
+    color: #111;
+    font-size: 12px;
+    padding: 4px 10px;
+    margin-right: 8px;
+}
+
+.reviews {
+    margin-bottom: 30px;
+}
+
+.reviews-titulo {
+    font-size: 24px;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.review {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 12px;
+}
+
+.review-usuario {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+.review-rating {
+    font-size: 16px;
+    color: #c9a84c;
+    margin-top: 4px;
+}
+
+.review-texto {
+    font-size: 14px;
+    color: #333;
+    margin-top: 8px;
+}
+
+.review-fecha {
+    font-size: 12px;
+    color: #888;
+    margin-top: 8px;
 }
