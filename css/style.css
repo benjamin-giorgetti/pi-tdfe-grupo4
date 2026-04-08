@@ -15,47 +15,65 @@ a {
 
 .index-body {
     font-family: Arial, sans-serif;
-    background-color: #e8e8e8;
+    background-color: #f0f0f0;
 }
 
-
-
+.index-header {
+    background-color: #111;
+}
 
 .header-contenido {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 12px 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
-.login {
-    width: 100%;
-    text-align: right;
-    padding: 10px 20px;
+.header-usuario {
     font-size: 14px;
-    color: #444;
 }
 
-.login a {
-    color: #444;
+.header-usuario a {
+    color: #ccc;
+    margin-left: 15px;
 }
 
-.logo-contenedor {
-    display: flex;
-    justify-content: center;
+.header-buscador {
+    width: 50%;
+    margin: 0 30px;
+}
+
+.header-buscador input {
+    width: 75%;
+    padding: 8px 12px;
+    border: 1px solid #555;
+    background-color: #222;
+    color: #fff;
+    font-size: 13px;
+}
+
+.header-buscador button {
+    padding: 8px 16px;
+    background-color: #c9a84c;
+    color: #111;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .logo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 70px;
+    height: 70px;
 }
 
 nav {
     width: 100%;
+    background-color: #1a1a1a;
     display: flex;
     justify-content: center;
+    border-top: 1px solid #333;
 }
 
 .nav-lista {
@@ -63,39 +81,38 @@ nav {
     width: 95%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .nav-item {
-    width: 32%;
-    height: 50px;
-    background-color: #222;
+    width: 150px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .nav-link {
-    color: #fff;
-    font-size: 14px;
+    color: #999;
+    font-size: 12px;
 }
 
 .contenido {
     max-width: 1200px;
     width: 95%;
-    margin: 20px auto;
+    margin: 30px auto;
     display: flex;
 }
 
 .sidebar {
-    width: 200px;
-    margin-right: 20px;
+    width: 170px;
+    margin-right: 25px;
 }
 
 .sidebar-titulo {
-    font-size: 16px;
-    color: #222;
-    margin-bottom: 10px;
+    font-size: 14px;
+    color: #1a1a1a;
+    margin-bottom: 8px;
 }
 
 .sidebar-lista {
@@ -104,14 +121,15 @@ nav {
 }
 
 .sidebar-item {
-    background-color: #222;
-    margin-bottom: 3px;
+    background-color: #fff;
+    margin-bottom: 2px;
+    border: 1px solid #ddd;
 }
 
 .sidebar-link {
-    color: #fff;
-    font-size: 14px;
-    padding: 10px 15px;
+    color: #333;
+    font-size: 13px;
+    padding: 8px 12px;
     display: flex;
 }
 
@@ -124,9 +142,9 @@ main {
 }
 
 .seccion h2 {
-    font-size: 18px;
-    color: #222;
-    margin-bottom: 15px;
+    font-size: 24px;
+    color: #1a1a1a;
+    margin-bottom: 20px;
 }
 
 .productos {
@@ -138,6 +156,9 @@ main {
 .producto {
     width: 31%;
     margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
 }
 
 .producto img {
@@ -145,42 +166,40 @@ main {
 }
 
 .producto h3 {
-    font-size: 14px;
-    color: #222;
-    margin-top: 8px;
+    font-size: 16px;
+    color: #1a1a1a;
+    margin-top: 10px;
 }
 
 .precio {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
-    color: #222;
+    color: #c9a84c;
     margin-top: 5px;
 }
 
 .producto p {
-    font-size: 13px;
-    color: #666;
+    font-size: 12px;
+    color: #888;
     margin-top: 5px;
 }
 
 .btn-ver-mas {
-    background-color: #222;
-    width: 100px;
-    padding: 8px 20px;
+    background-color: #111;
+    width: 90px;
+    padding: 6px 10px;
     margin-top: 10px;
     text-align: center;
+    border: 1px solid #c9a84c;
 }
 
 .btn-ver-mas a {
-    color: #fff;
-    font-size: 14px;
+    color: #c9a84c;
+    font-size: 12px;
 }
 
 footer {
-    max-width: 1200px;
-    width: 95%;
-    margin: 30px auto;
-    background-color: #222;
+    background-color: #111;
     padding: 20px 0;
     text-align: center;
 }
@@ -222,17 +241,17 @@ footer p {
     .producto {
         width: 48%;
     }
-
-    footer {
-        width: 95%;
-    }
 }
 
 @media (max-width: 420px) {
 
-    .logo {
-        width: 80px;
-        height: 80px;
+    .header-contenido {
+        flex-direction: column;
+    }
+
+    .header-buscador {
+        margin: 10px 0;
+        width: 100%;
     }
 
     .nav-lista {
@@ -256,10 +275,6 @@ footer p {
 
     .producto {
         width: 100%;
-    }
-
-    footer {
-        width: 90%;
     }
 }
 
