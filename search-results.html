@@ -1,11 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Relojeame</title>
 </head>
-<body>
-    
-</body>
+    <body class="index-body">
+        <header class="index-header">
+            <div class="header-contenido">
+                <div class="header-logo">
+                    <a href="./index.html">
+                        <img src="./img/logo.png" alt="Relojeame logo" class="logo">
+                    </a>
+                </div>
+                <div class="header-buscador">
+                    <form action="./search-results.html" method="GET">
+                        <input type="text" name="busqueda" placeholder="Buscar productos...">
+                        <button type="submit">Buscar</button>
+                    </form>
+                </div>
+                <div class="header-usuario">
+                    <a href="./login.html">Login</a>
+                    <a href="./register.html">Registrate</a>
+                </div>
+            </div>
+            
+            <nav>
+                <ul class="nav-lista">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./product.html">PRODUCTOS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./category.html">CATEGORÍAS</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="contenido">
+            <aside class="sidebar">
+                <h3 class="sidebar-titulo">Categorías</h3>
+                <ul class="sidebar-lista">
+                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Casual</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Formal</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Sport</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Luxury</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="./category.html">Aventura</a></li>
+                </ul>
+            </aside>
+
+            <main>
+                <section class="seccion">
+                    <h2>'Se encontraron resultados para: {Reloj Clásico Negro}'</h2>
+                    <h2 class="Noni">'No se encontraron resultados para: {Reloj Clásico Negro}'</h2>
+                    <div class="productos">
+                        <article class="producto">
+                            <img src="./img/Luxury stainless steel chronograph watch.png" alt="Reloj Clásico Negro">
+                            <h3>Reloj Clásico Negro</h3>
+                            <p class="precio">$549.99</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <div class="btn-ver-mas"><a href="./product.html">Ver detalle</a></div>
+                        </article>
+                       
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <footer>
+            <p>Franco Mariani | Benjamin Giorgetti | Jose Gimenez Kesseru</p>
+        </footer>
+        <script src="./js/index.js"></script>
+    </body>
 </html>
