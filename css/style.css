@@ -498,3 +498,22 @@ textarea {
     flex-direction: column;
     align-items: center;
 }
+
+.loginHeader {
+    background-color: #111;
+    align-items: center;
+}
+
+
+
+.divLoginLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logoLogin {
+    width: 200px;
+    height: 200px;
+}
