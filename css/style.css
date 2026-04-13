@@ -517,3 +517,19 @@ textarea {
     width: 200px;
     height: 200px;
 }
+.registerHeader {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pivRegisterLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logoRegister {
+    width: 200px;
+    height: 200px;
+}
