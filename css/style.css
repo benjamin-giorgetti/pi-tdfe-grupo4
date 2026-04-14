@@ -314,6 +314,9 @@ footer p {
         align-items: center;
     }
 
+    .div-genero {
+        font-size: 12px ;
+    }
 }
 
 .divRegister {
@@ -380,10 +383,11 @@ label {
     font-family: 'Times New Roman', Times, serif;
     margin-top: 20px;
     font-size: 40px;
+    color: #c9a84c;
 }
 
 .div-register {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -395,6 +399,7 @@ label {
     font-family: 'Times New Roman', Times, serif;
     margin-top: 20px;
     font-size: 40px;
+    color: #c9a84c;
 }
 
 .div-login {
@@ -567,4 +572,39 @@ textarea {
 .link-login {
     color: #c9a84c;
     text-decoration: underline;
+}
+
+input[type="submit"] {
+  background-color: #c9a84c;
+  border: none;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  
+}
+
+button {
+    background-color: #c9a84c;
+    border: none;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.div-register {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.pGenero {
+    color: #c9a84c;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.pHobbies {
+    color: #c9a84c;
+    font-weight: bold;
+    font-size: 17px;
 }
