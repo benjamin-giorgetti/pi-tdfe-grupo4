@@ -254,6 +254,13 @@ footer p {
     width: 100%;
     padding: 15px 0;
     }
+    .divMegacaja {
+        width: 350px;
+    }
+
+    .divRegister {
+        width: 400px;
+    }
 
 }
 
@@ -292,15 +299,32 @@ footer p {
     .producto {
         width: 100%;
     }
+
+    .divMegacaja {
+        width: 260px;
+    }
+
+    .divRegister {
+        width: 260px;
+    }
+
+    .div-hobbies {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 .divRegister {
-    max-width: 400px;
+    max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #f5f5f5;
+    background-color: #111;
     border-radius: 8px;
     box-shadow: black 0px 0px 10px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .div-terminos {
@@ -353,7 +377,7 @@ label {
 .login-h1 {
     text-align: center;
     margin-bottom: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     margin-top: 20px;
     font-size: 40px;
 }
@@ -368,7 +392,7 @@ label {
 .register-h1 {
     text-align: center;
     margin-bottom: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     margin-top: 20px;
     font-size: 40px;
 }
@@ -488,15 +512,17 @@ textarea {
 }
 
 .divMegacaja {
-    max-width: 400px;
+    max-width: 500px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #f5f5f5;
+    background-color: #111;
     border-radius: 8px;
     box-shadow: black 0px 0px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #fff;
+    font-family:'Times New Roman', Times, serif
 }
 
 .loginHeader {
@@ -532,4 +558,13 @@ textarea {
 .logoRegister {
     width: 200px;
     height: 200px;
+}
+
+.link-register {
+    color: #c9a84c;
+}
+
+.link-login {
+    color: #c9a84c;
+    text-decoration: underline;
 }
