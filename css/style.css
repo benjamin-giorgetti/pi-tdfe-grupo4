@@ -598,7 +598,10 @@ textarea {
     text-decoration: underline;
 }
 
-input[type="submit"] { /*modificar*/
+
+  
+
+.inputLogin {
   background-color: #c9a84c;
   border: none;
   padding: 8px;
@@ -607,7 +610,8 @@ input[type="submit"] { /*modificar*/
   
 }
 
-button { /*modificar*/
+
+.btnRegister {
     background-color: #c9a84c;
     border: none;
     padding: 8px;
