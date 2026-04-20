@@ -261,6 +261,20 @@ footer p {
     .divRegister {
         width: 400px;
     }
+    .producto-detalle {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto-detalle-info {
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .producto-tags {
+        justify-content: center;
+    }
 
 }
 
@@ -316,6 +330,16 @@ footer p {
 
     .div-genero {
         font-size: 12px ;
+    }
+    .header-contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header-buscador {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
     }
 }
 
