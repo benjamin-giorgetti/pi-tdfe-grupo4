@@ -580,10 +580,7 @@ textarea {
     height: 200px;
 }
 .registerHeader {
-    background-color: #111;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #111;  
 }
 .pivRegisterLogo {
     display: flex;
