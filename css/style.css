@@ -607,7 +607,7 @@ textarea {
   padding: 8px;
   font-size: 14px;
   font-weight: bold;
-  
+
 }
 
 
@@ -635,4 +635,10 @@ textarea {
     color: #c9a84c;
     font-weight: bold;
     font-size: 17px;
+}
+.footerLogin {
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 170px;
 }
