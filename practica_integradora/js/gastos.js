@@ -30,11 +30,16 @@ if (respuestaIniciar) {
             integrantes.push({ nombre, gastosdelDia })
             
         }
-        
-        if (gastosdelDia > 1000) {
+        let sumaGastos = 0
+        for (let i = 0; i < integrantes.length; i++) {
+            sumaGastos += integrantes[i].gastosdelDia
+        }
+
+        let promedio = sumaGastos / cantidadIntegrantes
+        if (sumaGastos > 1000) {
                 alert ("Debemos pedir un préstamo")
             }
-            let promedio = gastosdelDia / cantidadIntegrantes
+
             console.log(promedio)
             if (promedio < 500) {
                 alert ("Festejamos")
