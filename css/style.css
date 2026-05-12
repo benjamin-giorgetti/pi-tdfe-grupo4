@@ -13,16 +13,16 @@ a {
     color: #000;
 }
 
-.index-body {
+.indexBody {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
 }
 
-.index-header {
+.indexHeader {
     background-color: #111;
 }
 
-.header-contenido {
+.headerContenido {
     max-width: 1200px;
     margin: 0 auto;
     padding: 12px 20px;
@@ -31,21 +31,21 @@ a {
     justify-content: space-between;
 }
 
-.header-usuario {
+.headerUsuario {
     font-size: 14px;
 }
 
-.header-usuario a {
+.headerUsuario a {
     color: #ccc;
     margin-left: 15px;
 }
 
-.header-buscador {
+.headerBuscador {
     width: 50%;
     margin: 0 30px;
 }
 
-.header-buscador input {
+.headerBuscador input {
     width: 75%;
     padding: 8px 12px;
     border: 1px solid #555;
@@ -54,7 +54,7 @@ a {
     font-size: 13px;
 }
 
-.header-buscador button {
+.headerBuscador button {
     padding: 8px 16px;
     background-color: #c9a84c;
     color: #111;
@@ -76,7 +76,7 @@ nav {
     border-top: 1px solid #333;
 }
 
-.nav-lista {
+.navLista {
     max-width: 1200px;
     width: 95%;
     display: flex;
@@ -84,7 +84,7 @@ nav {
     justify-content: center;
 }
 
-.nav-item {
+.navItem {
     width: 150px;
     height: 35px;
     display: flex;
@@ -92,7 +92,7 @@ nav {
     align-items: center;
 }
 
-.nav-link {
+.navLink {
     color: #999;
     font-size: 12px;
 }
@@ -109,24 +109,24 @@ nav {
     margin-right: 25px;
 }
 
-.sidebar-titulo {
+.sidebarTitulo {
     font-size: 14px;
     color: #1a1a1a;
     margin-bottom: 8px;
 }
 
-.sidebar-lista {
+.sidebarLista {
     display: flex;
     flex-direction: column;
 }
 
-.sidebar-item {
+.sidebarItem {
     background-color: #fff;
     margin-bottom: 2px;
     border: 1px solid #ddd;
 }
 
-.sidebar-link {
+.sidebarLink {
     color: #333;
     font-size: 13px;
     padding: 8px 12px;
@@ -184,7 +184,7 @@ main {
     margin-top: 5px;
 }
 
-.btn-ver-mas {
+.btnVerMas {
     background-color: #111;
     width: 90px;
     padding: 6px 10px;
@@ -193,7 +193,7 @@ main {
     border: 1px solid #c9a84c;
 }
 
-.btn-ver-mas a {
+.btnVerMas a {
     color: #c9a84c;
     font-size: 12px;
 }
@@ -211,11 +211,11 @@ footer p {
 
 @media (max-width: 768px) {
 
-    .nav-item {
+    .navItem {
         height: 40px;
     }
 
-    .nav-link {
+    .navLink {
         font-size: 12px;
     }
 
@@ -229,12 +229,12 @@ footer p {
         margin-bottom: 20px;
     }
 
-    .sidebar-lista {
+    .sidebarLista {
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    .sidebar-item {
+    .sidebarItem {
         margin-right: 3px;
     }
 
@@ -242,15 +242,15 @@ footer p {
         width: 48%;
     }
 
-    .producto-detalle {
+    .productoDetalle {
     flex-direction: column;
     }
 
-    .producto-detalle-img {
+    .productoDetalleImg {
     width: 100%;
     }
 
-    .producto-detalle-info {
+    .productoDetalleInfo {
     width: 100%;
     padding: 15px 0;
     }
@@ -261,18 +261,18 @@ footer p {
     .divRegister {
         width: 400px;
     }
-    .producto-detalle {
+    .productoDetalle {
         flex-direction: column;
         align-items: center;
     }
 
-    .producto-detalle-info {
+    .productoDetalleInfo {
         width: 100%;
         padding: 15px 0;
         text-align: center;
     }
 
-    .producto-tags {
+    .productoTags {
         justify-content: center;
     }
 
@@ -282,31 +282,31 @@ footer p {
 
 @media (max-width: 420px) {
 
-    .header-contenido {
+    .headerContenido {
         flex-direction: column;
     }
 
-    .header-buscador {
+    .headerBuscador {
         margin: 10px 0;
         width: 100%;
     }
 
-    .nav-lista {
+    .navLista {
         flex-direction: column;
         align-items: stretch;
     }
 
-    .nav-item {
+    .navItem {
         width: 100%;
         border: 1px solid #444;
         margin-bottom: 3px;
     }
 
-    .sidebar-lista {
+    .sidebarLista {
         flex-direction: column;
     }
 
-    .sidebar-item {
+    .sidebarItem {
         margin-right: 0;
     }
 
@@ -322,21 +322,21 @@ footer p {
         width: 260px;
     }
 
-    .div-hobbies {
+    .divHobbies {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
     }
 
-    .div-genero {
+    .divGenero {
         font-size: 12px ;
     }
-    .header-contenido {
+    .headerContenido {
         flex-direction: column;
         align-items: center;
     }
 
-    .header-buscador {
+    .headerBuscador {
         margin: 10px 0;
         width: 100%;
         text-align: center;
@@ -354,14 +354,14 @@ footer p {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.div-terminos {
+.divTerminos {
     margin-top: 15px;
     display: flex;
     align-items: left;
     justify-content: center;
 }
 
-.div-hobbies {
+.divHobbies {
     margin-top: 15px;
     display: flex;
     align-items: center;
@@ -370,7 +370,7 @@ footer p {
     margin-top: 15px;
 }
 
-.div-genero {
+.divGenero {
     margin-top: 15px;
     display: flex;
     align-items: center;
@@ -382,7 +382,7 @@ label {
     margin: 3px;
 }
 
-.div-recordarme {
+.divRecordarme {
     margin-top: 15px;
     margin-bottom: 15px;
     display: flex;
@@ -390,18 +390,25 @@ label {
     justify-content: center;
 }
 
-.div-hacia-register {
+.divHaciaRegister {
     display: flex;
     justify-content: center;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
-.link-register {
+.divHaciaLogin {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.linkRegister {
     text-decoration: underline;
 }
 
-.login-h1 {
+.loginH1 {
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Times New Roman', Times, serif;
@@ -410,14 +417,14 @@ label {
     color: #c9a84c;
 }
 
-.div-register {
+.inputRegister {
     margin-bottom: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.register-h1 {
+.registerH1 {
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Times New Roman', Times, serif;
@@ -426,7 +433,7 @@ label {
     color: #c9a84c;
 }
 
-.div-login {
+.divLogin {
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
@@ -442,56 +449,56 @@ textarea {
     resize: none;
 }
 
-.producto-detalle {
+.productoDetalle {
     display: flex;
     margin-bottom: 30px;
 }
 
-.producto-detalle-img {
+.productoDetalleImg {
     width: 45%;
 }
 
-.producto-detalle-info {
+.productoDetalleInfo {
     width: 55%;
     padding: 0 25px;
 }
 
-.producto-detalle-nombre {
+.productoDetalleNombre {
     font-size: 28px;
     color: #1a1a1a;
     margin-bottom: 12px;
 }
 
-.producto-marca {
+.productoMarca {
     font-size: 14px;
     color: #555;
     margin-bottom: 8px;
 }
 
-.producto-categoria {
+.productoCategoria {
     font-size: 14px;
     color: #555;
     margin-bottom: 8px;
 }
 
-.producto-stock {
+.productoStock {
     font-size: 14px;
     color: #555;
     margin-bottom: 8px;
 }
 
-.producto-descripcion {
+.productoDescripcion {
     font-size: 14px;
     color: #333;
     margin-top: 12px;
     margin-bottom: 12px;
 }
 
-.producto-tags {
+.productoTags {
     display: flex;
 }
 
-.producto-tag {
+.productoTag {
     background-color: #c9a84c;
     color: #111;
     font-size: 12px;
@@ -503,7 +510,7 @@ textarea {
     margin-bottom: 30px;
 }
 
-.reviews-titulo {
+.reviewsTitulo {
     font-size: 24px;
     color: #1a1a1a;
     margin-bottom: 20px;
@@ -516,19 +523,19 @@ textarea {
     margin-bottom: 12px;
 }
 
-.review-usuario {
+.reviewUsuario {
     font-size: 14px;
     font-weight: bold;
     color: #1a1a1a;
 }
 
-.review-rating {
+.reviewRating {
     font-size: 16px;
     color: #c9a84c;
     margin-top: 4px;
 }
 
-.review-texto {
+.reviewTexto {
     font-size: 14px;
     color: #333;
     margin-top: 8px;
@@ -573,10 +580,7 @@ textarea {
     height: 200px;
 }
 .registerHeader {
-    background-color: #111;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #111;  
 }
 .pivRegisterLogo {
     display: flex;
@@ -589,11 +593,11 @@ textarea {
     height: 200px;
 }
 
-.link-register {
+.linkRegister {
     color: #c9a84c;
 }
 
-.link-login {
+.linkLogin {
     color: #c9a84c;
     text-decoration: underline;
 }
@@ -607,7 +611,10 @@ textarea {
   padding: 8px;
   font-size: 14px;
   font-weight: bold;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 645cb2c917ab5b5ce01d52b88b0c5ec8b2e8d657
 }
 
 
@@ -620,7 +627,7 @@ textarea {
     margin: 5px;
 }
 
-.div-register {
+.inputRegister {
     font-weight: bold;
     font-size: 17px;
 }
@@ -640,5 +647,5 @@ textarea {
     background-color: #111;
     padding: 20px 0;
     text-align: center;
-    margin-top: 170px;
+    margin-top: 170px;  
 }

@@ -6,53 +6,53 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Registro</title>
 </head>
-<body class="register-body">
-    <header class="index-header">
-            <div class="header-contenido">
-                <div class="header-logo">
+<body class="registerBody">
+    <header class="registerHeader">
+            <div class="headerContenido">
+                <div class="pivRegisterLogo">
                     <a href="./index.html">
-                        <img src="./img/logo.png" alt="Relojeame logo" class="logo">
+                        <img src="./img/logo.png" alt="Relojeame logo" class="logoRegister">
                     </a>
                 </div>
-                <div class="header-buscador">
+                <div class="headerBuscador">
                     <form action="./search-results.html" method="GET">
                         <input type="text" name="busqueda" placeholder="Buscar productos...">
                         <button type="submit">Buscar</button>
                     </form>
                 </div>
-                <div class="header-usuario">
+                <div class="headerUsuario">
                     <a href="./login.html">Login</a>
                     <a href="./register.html">Registrate</a>
                 </div>
             </div>
             
             <nav>
-                <ul class="nav-lista">
-                    <li class="nav-item"><a class="nav-link" href="./index.html">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./product.html">PRODUCTOS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./category.html">CATEGORÍAS</a></li>
+                <ul class="navLista">
+                    <li class="navItem"><a class="navLink" href="./index.html">HOME</a></li>
+                    <li class="navItem"><a class="navLink" href="./product.html">PRODUCTOS</a></li>
+                    <li class="navItem"><a class="navLink" href="./category.html">CATEGORÍAS</a></li>
                 </ul>
             </nav>
     </header>
     <div class="divRegister">
-        <h1 class="register-h1">Registrate</h1>
+        <h1 class="registerH1">Registrate</h1>
         <form action="./index.html" method="GET">
-            <div class="div-register">
+            <div class="inputRegister">
                 <label for="username">Usuario:</label>
                 <input type="text" id="username" name="username" required>
             </div>
 
-            <div class="div-register">
+            <div class="inputRegister">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
             </div>
 
-            <div class="div-register">
+            <div class="inputRegister">
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password">
             </div>
 
-            <div class="div-register">
+            <div class="inputRegister">
                 <label for="nacionalidad">Nacionalidad:</label>
                 <select name="nacionalidad" id="nacionalidad">
                     <option value="">Seleccione una nacionalidad</option>
@@ -64,44 +64,50 @@
                 </select>
             </div>
 
-            <div class="div-genero">
+            <div class="divGenero">
                 <p class="pGenero">Género:</p>
-                <input type="radio" name="genero" value="masculino" id="genero-masculino">
-                <label for="genero-masculino">Masculino</label>
-                <input type="radio" name="genero" value="femenino" id="genero-femenino">
-                <label for="genero-femenino">Femenino</label>
-                <input type="radio" name="genero" value="otro" id="genero-otro">
-                <label for="genero-otro">Otro</label>
+                <input type="radio" name="genero" value="masculino" id="generoMasculino">
+                <label for="generoMasculino">Masculino</label>
+                <input type="radio" name="genero" value="femenino" id="generoFemenino">
+                <label for="generoFemenino">Femenino</label>
+                <input type="radio" name="genero" value="otro" id="generoOtro">
+                <label for="generoOtro">Otro</label>
             </div>
 
-            <div class="div-hobbies">
+            <div class="divHobbies">
                 <p class="pHobbies">Hobbies:</p>
-                <input type="checkbox" name="hobbies" id="hobby-leer" value="leer">
-                <label for="hobby-leer">Leer</label>
-                <input type="checkbox" name="hobbies" id="hobby-deporte" value="deporte">
-                <label for="hobby-deporte">Deporte</label>
-                <input type="checkbox" name="hobbies" id="hobby-musica" value="musica">
-                <label for="hobby-musica">Música</label>
-                <input type="checkbox" name="hobbies" id="hobby-viajar" value="viajar">
-                <label for="hobby-viajar">Viajar</label>
-                <input type="checkbox" name="hobbies" id="hobby-cocina" value="cocina">
-                <label for="hobby-cocina">Cocina</label>
+                <input type="checkbox" name="hobbies" id="hobbyLeer" value="leer">
+                <label for="hobbyLeer">Leer</label>
+                <input type="checkbox" name="hobbies" id="hobbyDeporte" value="deporte">
+                <label for="hobbyDeporte">Deporte</label>
+                <input type="checkbox" name="hobbies" id="hobbyMusica" value="musica">
+                <label for="hobbyMusica">Música</label>
+                <input type="checkbox" name="hobbies" id="hobbyViajar" value="viajar">
+                <label for="hobbyViajar">Viajar</label>
+                <input type="checkbox" name="hobbies" id="hobbyCocina" value="cocina">
+                <label for="hobbyCocina">Cocina</label>
             </div>
-            <div class="div-register">
-                <label for="contanos-sobre-vos">Contanos sobre vos:</label>
-                <textarea name="contanos-sobre-vos" id="contanos-sobre-vos" rows="5"></textarea>
+            <div class="inputRegister">
+                <label for="contanosSobreVos">Contanos sobre vos:</label>
+                <textarea name="contanosSobreVos" id="contanosSobreVos" rows="5"></textarea>
             </div>
-            <div class="div-terminos">
+            <div class="divTerminos">
                 <input type="checkbox" name="terminos" id="terminos" required>
                 <label for="terminos">Acepto los términos y condiciones</label>
             </div>
+<<<<<<< HEAD
             <div class="div-register">
                 <button class="btnRegister" type="submit">Enviar</button>
                 <button class="btnRegister" type="reset">Resetear</button>
+=======
+            <div class="inputRegister">
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetear</button>
+>>>>>>> 645cb2c917ab5b5ce01d52b88b0c5ec8b2e8d657
             </div>
 
-            <div class="div-hacia-login">
-                <p>¿Ya tenes cuenta? <a class="link-login" href="./login.html">Inicia sesión</a></p>
+            <div class="divHaciaLogin">
+                <p>¿Ya tenes cuenta? <a class="linkLogin" href="./login.html">Inicia sesión</a></p>
             </div>
         </form>
     </div>
