@@ -1,59 +1,32 @@
-let formulario = document.querySelector("form");
-let nombre = document.querySelector("#fullName").value;
+let formulario = document.querySelector("#formRegister");
 let email = document.querySelector("#email").value;
-let telefono = document.querySelector("#phone").value;
 let password = document.querySelector("#password").value;
 let confirmPassword = document.querySelector("#rePassword").value;
-let valores = document.querySelector(".class-form").value;
 
-let errorNombre = document.querySelector(".invalid-feedback fullName");
-let errorEmail = document.querySelector(".invalid-feedback email");
-let errorTelefono = document.querySelector(".invalid-feedback phone");
-let errorPassword = document.querySelector(".invalid-feedback password");
-let errorConfirmPassword = document.querySelector(".invalid-feedback rePassword");
+let errorEmail = document.querySelector(".email");
+let errorPassword = document.querySelector(".password");
+let errorConfirmPassword = document.querySelector(".rePassword");
 
 
 formulario.addEventListener("submit", function (event) {
     event.preventDefault();
-   
-    fullNameError.innerText = "";
-    emailError.innerText = "";
-    phoneError.innerText = "";
-    passwordError.innerText = "";
-    rePasswordError.innerText = "";
 
     error = false;
+  
 
-
-    if (valores == "") {
-    }
-    if (nombre == "") {
-        errorNombre.style.display = "block";
-        errorNombre.innerText = "El campo nombre es obligatorio";
-        error = true;
-
-    }
-    if (email == "") {
+    if (email.value == "") {
         errorEmail.style.display = "block";
         errorEmail.innerText = "El campo email es obligatorio";
         error = true;
 
     }
-    if (telefono == "") {
-        errorTelefono.style.display = "block";
-        errorTelefono.innerText = "El campo teléfono es obligatorio";
-        error = true;
-    } else if (telefono.value.length < 8) {
-        errorTelefono.style.display = "block";
-        errorTelefono.innerText = "El campo teléfono debe tener al menos 8 caracteres";
-        error = true;
-    }
-    if (password == "") {
+    
+    if (password.value == "") {
         errorPassword.style.display = "block";
         errorPassword.innerText = "El campo password es obligatorio";
         error = true;
-    } else if (password.value.length <= 3) {
-    errorPassword.innerText = "La contraseña debe tener más de 3 caracteres.";
+    } else if (password.value.length <= 5) {
+    errorPassword.innerText = "La contraseña debe tener al menos 6 caracteres.";
     errorPassword.style.display = "block";
     error = true;
     }
@@ -62,7 +35,7 @@ formulario.addEventListener("submit", function (event) {
         errorConfirmPassword.style.display = "block";
         errorConfirmPassword.innerText = "El campo confirmar password es obligatorio";
         error = true;
-    } else if (password.value !== confirmPassword.value) {
+    } else if (password !== confirmPassword) {
     errorConfirmPassword.innerText = "Las contraseñas no coinciden.";
     errorConfirmPassword.style.display = "block";
     error = true;
@@ -75,8 +48,7 @@ formulario.addEventListener("submit", function (event) {
             telefono: telefono.value,
             password: password.value,
         }
-    let datosJson = JSON.stringify(datos);
-    localStorage.setItem("datosGuardados", datosJson);
+    
     formulario.submit();
     }
 })

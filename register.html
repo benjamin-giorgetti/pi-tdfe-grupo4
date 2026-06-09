@@ -36,20 +36,27 @@
     </header>
     <div class="divRegister">
         <h1 class="registerH1">Registrate</h1>
-        <form action="./index.html" method="GET">
+        <form id="formRegister" action="./login.html" method="GET">
             <div class="inputRegister">
                 <label for="username">Usuario:</label>
-                <input type="text" id="username" name="username" required>
+                <input type="text" id="username" name="username" >
             </div>
 
             <div class="inputRegister">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="text" id="email" name="email" >
+                <div class="email"></div>
             </div>
 
             <div class="inputRegister">
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password">
+                <div class="password"></div>
+            </div>
+            <div class="inputRegister">
+                <label for="rePassword">Repetir Password:</label>
+                <input type="password" id="rePassword" name="rePassword">
+                <div class="rePassword"></div>
             </div>
 
             <div class="inputRegister">
@@ -92,7 +99,7 @@
                 <textarea name="contanosSobreVos" id="contanosSobreVos" rows="5"></textarea>
             </div>
             <div class="divTerminos">
-                <input type="checkbox" name="terminos" id="terminos" required>
+                <input type="checkbox" name="terminos" id="terminos" >
                 <label for="terminos">Acepto los términos y condiciones</label>
             </div>
             <div class="divBotonesRegister">
@@ -108,5 +115,6 @@
 <footer>
             <p>Franco Mariani | Benjamin Giorgetti | Jose Gimenez Kesseru</p>
 </footer>
+<script src="./js/register.js"></script>
 </body>
 </html>

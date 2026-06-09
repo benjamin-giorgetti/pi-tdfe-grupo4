@@ -657,3 +657,18 @@ textarea {
     display: flex;
     justify-content: center;
 }
+.email {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.password {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.rePassword {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
