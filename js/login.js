@@ -1,29 +1,28 @@
-let formulario = document.querySelector("form");
-let email = document.querySelector("#email").value;
-let password = document.querySelector("#password").value;
+let formulario = document.querySelector("#formLogin");
+let email = document.querySelector("#email");
+let password = document.querySelector("#password");
 
 
-let errorEmail = document.querySelector(".invalid-feedback email");
-let errorPassword = document.querySelector(".invalid-feedback password");
+let errorEmail = document.querySelector(".email");
+let errorPassword = document.querySelector(".password");
 
 
-formulario.addEventListener("submit", function (event) {
-    event.preventDefault();
+formulario.addEventListener("submit", function(e) {
+    e.preventDefault();
+
    
-    emailError.innerText = "";
-    passwordError.innerText = "";
 
     error = false;
 
 
-    if (email == "") {
+    if (email.value == "") {
         errorEmail.style.display = "block";
         errorEmail.innerText = "El campo email es obligatorio";
         error = true;
 
     }
     
-    if (password == "") {
+    if (password.value == "") {
         errorPassword.style.display = "block";
         errorPassword.innerText = "El campo password es obligatorio";
         error = true;
