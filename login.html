@@ -17,9 +17,10 @@
                     </a>
                 </div>
                 <div class="headerBuscador">
-                    <form action="./search-results.html" method="GET">
-                        <input type="text" name="busqueda" placeholder="Buscar productos...">
+                    <form id="formBusqueda" action="./search-results.html" method="GET">
+                        <input type="text" id="busqueda" name="busqueda" placeholder="Buscar productos...">
                         <button type="submit">Buscar</button>
+                        <div class="error"></div>
                     </form>
                 </div>
                 <div class="headerUsuario">
@@ -40,7 +41,7 @@
     <h1 class="loginH1">Login</h1>
         <form id="formLogin" action="./index.html" method="GET">
             <div class="divLogin">
-                <label for="emaila">Email:</label>
+                <label for="email">Email:</label>
                 <input type="text" id="email" name="email">
                 <div class="email"></div>
             </div>
@@ -71,6 +72,7 @@
     
 
 <script src="./js/login.js"></script>
+<script src="./js/header.js"></script>
 </body>
 
 </html>

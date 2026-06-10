@@ -16,9 +16,10 @@
                     </a>
                 </div>
                 <div class="headerBuscador">
-                    <form action="./search-results.html" method="GET">
-                        <input type="text" name="busqueda" placeholder="Buscar productos...">
+                    <form id="formBusqueda" action="./search-results.html" method="GET">
+                        <input type="text" id="busqueda" name="busqueda" placeholder="Buscar productos...">
                         <button type="submit">Buscar</button>
+                        <div class="error"></div>
                     </form>
                 </div>
                 <div class="headerUsuario">
@@ -114,6 +115,7 @@
         <footer>
             <p>Franco Mariani | Benjamin Giorgetti | Jose Gimenez Kesseru</p>
         </footer>
-
+        
+        <script src="./js/header.js"></script>
     </body>
 </html>
