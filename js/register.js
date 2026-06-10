@@ -1,7 +1,7 @@
 let formulario = document.querySelector("#formRegister");
-let email = document.querySelector("#email").value;
-let password = document.querySelector("#password").value;
-let confirmPassword = document.querySelector("#rePassword").value;
+let email = document.querySelector("#email");
+let password = document.querySelector("#password");
+let confirmPassword = document.querySelector("#rePassword");
 
 let errorEmail = document.querySelector(".email");
 let errorPassword = document.querySelector(".password");
@@ -18,7 +18,8 @@ formulario.addEventListener("submit", function (event) {
         errorEmail.style.display = "block";
         errorEmail.innerText = "El campo email es obligatorio";
         error = true;
-
+    } else if (email.value != "") {
+        errorEmail.style.display = "none";
     }
     
     if (password.value == "") {
@@ -26,29 +27,32 @@ formulario.addEventListener("submit", function (event) {
         errorPassword.innerText = "El campo password es obligatorio";
         error = true;
     } else if (password.value.length <= 5) {
-    errorPassword.innerText = "La contraseña debe tener al menos 6 caracteres.";
-    errorPassword.style.display = "block";
-    error = true;
+        errorPassword.innerText = "La contraseña debe tener al menos 6 caracteres.";
+        errorPassword.style.display = "block";
+        error = true;
+    } else if (password.value.length > 5) {
+        errorPassword.style.display = "none";
     }
 
-    if (confirmPassword == "") {
+    if (confirmPassword.value == "") {
         errorConfirmPassword.style.display = "block";
         errorConfirmPassword.innerText = "El campo confirmar password es obligatorio";
         error = true;
-    } else if (password !== confirmPassword) {
-    errorConfirmPassword.innerText = "Las contraseñas no coinciden.";
-    errorConfirmPassword.style.display = "block";
-    error = true;
+    } else if (password.value !== confirmPassword.value) {
+        errorConfirmPassword.innerText = "Las contraseñas no coinciden.";
+        errorConfirmPassword.style.display = "block";
+        error = true;
+    } else if (password.value === confirmPassword.value) {
+        errorConfirmPassword.style.display = "none";
     }
 
     if (error == false) {
         let datos = {
-            nombre: nombre.value,
             email: email.value,
-            telefono: telefono.value,
             password: password.value,
         }
-    
+    let datosJson = JSON.stringify(datos);
+    localStorage.setItem("datosGuardados", datosJson);
     formulario.submit();
     }
 })

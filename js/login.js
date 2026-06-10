@@ -34,9 +34,7 @@ formulario.addEventListener("submit", function(e) {
 
     if (error == false) {
         let datos = {
-            nombre: nombre.value,
             email: email.value,
-            telefono: telefono.value,
             password: password.value,
         }
     let datosJson = JSON.stringify(datos);
