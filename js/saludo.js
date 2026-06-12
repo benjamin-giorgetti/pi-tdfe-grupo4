@@ -2,9 +2,9 @@ let headerUsuario = document.querySelector(".headerUsuario");
 let logout = document.querySelector(".logout");
 
 let datosUsuario = localStorage.getItem("datosGuardados");
-
-if (datosUsuario !== null) {
-    let datosUsuarioParseados = JSON.parse(datosUsuario);
+let datosUsuarioParseados = JSON.parse(datosUsuario);
+console.log(datosUsuarioParseados);
+if (datosUsuario !== null) {  
 
     headerUsuario.style.display = "none";
 
@@ -14,6 +14,11 @@ if (datosUsuario !== null) {
     `;
 
     let botonLogout = document.querySelector("#botonLogout");
-
-
+    
+    botonLogout.addEventListener("click", function() {
+        localStorage.removeItem("datosGuardados");
+        headerUsuario.style.display = "block";
+        logout.style.display = "none";
+        
+    });
 } 

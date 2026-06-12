@@ -19,23 +19,25 @@ formulario.addEventListener("submit", function(e) {
         errorEmail.style.display = "block";
         errorEmail.innerText = "El campo email es obligatorio";
         error = true;
-
+    } else if (email.value != "") {
+        errorEmail.style.display = "none";
     }
-    
+
     if (password.value == "") {
         errorPassword.style.display = "block";
         errorPassword.innerText = "El campo password es obligatorio";
         error = true;
     } else if (password.value.length <= 5) {
-    errorPassword.innerText = "La contraseña debe tener al menos 6 caracteres.";
-    errorPassword.style.display = "block";
-    error = true;
+        errorPassword.innerText = "La contraseña debe tener al menos 6 caracteres.";
+        errorPassword.style.display = "block";
+        error = true;
+    } else if (password.value.length >= 6) {
+        errorPassword.style.display = "none";
     }
 
     if (error == false) {
         let datos = {
             email: email.value,
-            password: password.value,
         }
     let datosJson = JSON.stringify(datos);
     localStorage.setItem("datosGuardados", datosJson);
