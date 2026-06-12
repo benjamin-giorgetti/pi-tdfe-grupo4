@@ -677,3 +677,18 @@ textarea {
     font-size: 12px;
     margin-top: 5px;
 }   
+.logout {
+    color: #ccc;
+    margin-left: 15px;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#botonLogout {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: #c9a84c;
+    margin-left: 10px;
+}
