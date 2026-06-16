@@ -6,8 +6,8 @@ let categoriaTitulo = document.querySelector(".categoriaTitulo");
 let productosCategoria = document.querySelector(".productosCategoria");
 
 if (categoria == null) {
-    categoriaTitulo.innerHTML = "Categoría no seleccionada";
-    productosCategoria.innerHTML = "<p>No hay productos para mostrar.</p>";
+    categoriaTitulo.innerHTML = "Seleccioná una categoría";
+    productosCategoria.innerHTML = "<p>Elegí una categoría del menú para ver sus productos.</p>";
 } else {
     categoriaTitulo.innerHTML = categoria;
 
