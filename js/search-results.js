@@ -1,48 +1,58 @@
-let params = new URLSearchParams(window.location.search);
-let textoBusqueda = params.get("busqueda") || "";
+let queryString = location.search;
+let queryStringObj = new URLSearchParams(queryString);
 
-let tituloResultados = document.querySelector(".seccion h2:first-of-type");
+let textoBusqueda = queryStringObj.get("busqueda");
+
+let tituloResultados = document.querySelector(".tituloResultados");
 let tituloNoResultados = document.querySelector(".tituloNoResultados");
 let contenedorProductos = document.querySelector(".productos");
-
-tituloResultados.textContent = `Se encontraron resultados para: "${textoBusqueda}"`;
-tituloNoResultados.textContent = `No se encontraron resultados para: "${textoBusqueda}"`;
 
 tituloResultados.style.display = "none";
 tituloNoResultados.style.display = "none";
 contenedorProductos.innerHTML = "";
 
-fetch("https://dummyjson.com/products?limit=0")
+fetch("https://dummyjson.com/products/search?q=" + textoBusqueda)
     .then(function(respuesta) {
         return respuesta.json();
     })
     .then(function(data) {
-        let productos = data.products;
-        let busquedaLower = textoBusqueda.toLowerCase();
 
-        let resultados = productos.filter(function(p) {
-            return (
-                p.title.toLowerCase().includes(busquedaLower) ||
-                p.description.toLowerCase().includes(busquedaLower) ||
-                p.category.toLowerCase().includes(busquedaLower)
-            );
-        });
+        if (textoBusqueda && data.products.length > 0) {
 
-        if (resultados.length > 0) {
             tituloResultados.style.display = "block";
-            for (let i = 0; i < resultados.length; i++) {
-                let producto = resultados[i];
-                contenedorProductos.innerHTML += `
-                    <article class="producto">
-                        <img src="${producto.thumbnail}" alt="${producto.title}">
-                        <h3>${producto.title}</h3>
-                        <p class="precio">$${producto.price}</p>
-                        <p>${producto.description}</p>
-                        <div class="btnVerMas"><a href="./product.html?id=${producto.id}">Ver detalle</a></div>
-                    </article>
-                `;
-            }
-        } else {
+            tituloResultados.innerText = "Se encontraron resultados para: " + textoBusqueda;
+
+        } else if (textoBusqueda && data.products.length === 0) {
+
             tituloNoResultados.style.display = "block";
+            tituloNoResultados.innerText = "No se encontraron resultados para: " + textoBusqueda;
+
+        } else {
+
+            tituloResultados.innerText = "";
         }
+
+        let productosHTML = "";
+
+        for (let i = 0; i < data.products.length; i++) {
+
+            let producto = data.products[i];
+
+            productosHTML += `
+                <article class="producto">
+                    <img src="${producto.thumbnail}" alt="${producto.title}">
+                    <h3>${producto.title}</h3>
+                    <p class="precio">$${producto.price}</p>
+                    <p>${producto.description}</p>
+                    <div class="btnVerMas">
+                        <a href="./product.html?id=${producto.id}">Ver detalle</a>
+                    </div>
+                </article>
+            `;
+        }
+
+        contenedorProductos.innerHTML = productosHTML;
+    })
+    .catch(function(error) {
+        console.log(error);
     });
