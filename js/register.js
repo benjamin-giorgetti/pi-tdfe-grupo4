@@ -47,12 +47,6 @@ formulario.addEventListener("submit", function (event) {
     }
 
     if (error == false) {
-        let datos = {
-            email: email.value,
-            password: password.value,
-        }
-    let datosJson = JSON.stringify(datos);
-    localStorage.setItem("datosGuardados", datosJson);
     formulario.submit();
     }
 })
